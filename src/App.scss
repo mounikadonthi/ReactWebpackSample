@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+}
+.page-header{
+    background-color: #3399cc;
+    padding: 25px; 
+    .title{
+        color: white;
+        font-family: monospace;
+        font-size: 50px;
+        font-weight: 400;    
+        margin-bottom: 0;
+    }   
+
+}
+.custom-nav{
+    background-color: #333333;
+    padding: 5px;
+    .nav-link{
+        color: white;
+        font-size: 18px;
+        font-weight: 600;
+        
+    }
+    li:nth-child(3){
+        position: absolute;
+        right: 10px;
+    }
+}
+.page-content{
+    padding: 30px;
+    .title{
+        margin-bottom: 30px;
+        padding: 0 15px;
+    }
+    p{
+        margin-bottom: 0;
+    }
+    #allContacts{
+        height: 650px;
+        overflow-y: auto;
+    }
+    
+    .contact{
+        border: 1px solid rgba(0, 0, 0, 0.125);
+        cursor: pointer;
+        display: block;
+        padding: 0 1rem 0.5rem 1rem;
+        .name{
+            color: #4a4a4a;
+            font-size: 32px;   
+            margin-bottom: 3px;
+            font-weight: 400;
+        }
+        .email,.mobile{
+            color: #5d5d5d;
+            margin-bottom: 0;
+        }
+        .active{
+            background-color: #cee7f2;
+        }       
+    }
+    input[type="button"]{
+        background: none;
+        border: none;
+        font-size: 18px;
+        font-weight: 400; 
+        padding:0 10px;
+    }
+    .contact-details{
+        color: #656565;
+        margin-bottom: 3px;
+        .contact-data{
+            color: #545454; 
+            font-family: sans-serif;
+            padding-left: 4px;  
+        }
+        .contact-name{
+            color: #333333;
+            font-size: 36px;
+            font-weight: 600;                   
+        }
+        span i{
+            font-size: 20px;
+        }
+        #contactAddress{
+            display: inline-flex;
+            white-space: pre-wrap;   
+        }
+    }   
+    #contactForm{
+        box-shadow: -2px -2px 20px 12px lightgrey;
+        padding: 20px;
+        .lbl-error{
+            color: red;
+        }
+        .site-field{
+            clear: both;
+        }
+        textarea{
+            resize: none;
+        } 
+        .btn-add{
+            color: white;   
+            border-radius: 0;
+            background-color: #468c00;
+            border: 0;
+            padding: 3px 5px;
+            width: 100px;
+        }
+        .close{
+            color: red;
+            cursor: pointer;
+            font-size: 16px;
+            position: absolute;
+            top: 10px;
+            right: 25px;
+        }
+        
+    }   
+}   
